@@ -49,7 +49,7 @@ Less than 20 Epochs
 Have used BN, Dropout, a Fully connected layer, have used GAP. 
 
 ### Final Results
-1. Achieved 99.4 test accuracy in 15th epoch
+1. Achieved 99.4 test accuracy in 17th epoch
 2. Total Parameters 9848
 3. Droput = 0.04
 4. Augmentation = Yes
@@ -67,98 +67,100 @@ Have used BN, Dropout, a Fully connected layer, have used GAP.
 
 
 ### Model Results
-  0%|          | 0/1875 [00:00<?, ?it/s]epoches: 1
-/usr/local/lib/python3.7/dist-packages/ipykernel_launcher.py:84: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
-Loss=0.1682090163230896 Batch_id=1874 Accuracy=91.70: 100%|██████████| 1875/1875 [00:25<00:00, 73.02it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0532, Accuracy: 9834/10000 (98.34%)
+epoches: 1
+  0%|          | 0/1875 [00:00<?, ?it/s]<ipython-input-8-92be57754e27>:84: UserWarning: Implicit dimension choice for log_softmax has been deprecated. Change the call to include dim=X as an argument.
+  return F.log_softmax(x)
+Loss=0.01791616901755333 Batch_id=1874 Accuracy=92.02: 100%|██████████| 1875/1875 [00:32<00:00, 57.98it/s]
+
+Test set: Average loss: 0.0578, Accuracy: 9817/10000 (98.17%)
 
 epoches: 2
-Loss=0.04723441228270531 Batch_id=1874 Accuracy=97.19: 100%|██████████| 1875/1875 [00:25<00:00, 72.21it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0388, Accuracy: 9874/10000 (98.74%)
+Loss=0.01668095961213112 Batch_id=1874 Accuracy=97.20: 100%|██████████| 1875/1875 [00:33<00:00, 56.75it/s]
+
+Test set: Average loss: 0.0354, Accuracy: 9890/10000 (98.90%)
 
 epoches: 3
-Loss=0.03079293854534626 Batch_id=1874 Accuracy=97.60: 100%|██████████| 1875/1875 [00:25<00:00, 73.86it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0321, Accuracy: 9895/10000 (98.95%)
+Loss=0.019943520426750183 Batch_id=1874 Accuracy=97.75: 100%|██████████| 1875/1875 [00:32<00:00, 57.37it/s]
+
+Test set: Average loss: 0.0300, Accuracy: 9897/10000 (98.97%)
 
 epoches: 4
-Loss=0.003184626577422023 Batch_id=1874 Accuracy=97.89: 100%|██████████| 1875/1875 [00:25<00:00, 72.77it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0261, Accuracy: 9910/10000 (99.10%)
+Loss=0.2935098707675934 Batch_id=1874 Accuracy=98.03: 100%|██████████| 1875/1875 [00:33<00:00, 56.06it/s]
+
+Test set: Average loss: 0.0280, Accuracy: 9915/10000 (99.15%)
 
 epoches: 5
-Loss=0.024312244728207588 Batch_id=1874 Accuracy=98.11: 100%|██████████| 1875/1875 [00:26<00:00, 71.98it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0258, Accuracy: 9912/10000 (99.12%)
+Loss=0.01274165604263544 Batch_id=1874 Accuracy=98.19: 100%|██████████| 1875/1875 [00:33<00:00, 55.29it/s]
+
+Test set: Average loss: 0.0240, Accuracy: 9923/10000 (99.23%)
 
 epoches: 6
-Loss=0.0924961194396019 Batch_id=1874 Accuracy=98.25: 100%|██████████| 1875/1875 [00:25<00:00, 72.61it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0207, Accuracy: 9931/10000 (99.31%)
+Loss=0.10993336886167526 Batch_id=1874 Accuracy=98.34: 100%|██████████| 1875/1875 [00:33<00:00, 56.28it/s]
+
+Test set: Average loss: 0.0255, Accuracy: 9922/10000 (99.22%)
 
 epoches: 7
-Loss=0.05757199600338936 Batch_id=1874 Accuracy=98.31: 100%|██████████| 1875/1875 [00:26<00:00, 72.03it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0226, Accuracy: 9920/10000 (99.20%)
+Loss=0.015055202879011631 Batch_id=1874 Accuracy=98.34: 100%|██████████| 1875/1875 [00:33<00:00, 56.37it/s]
+
+Test set: Average loss: 0.0214, Accuracy: 9929/10000 (99.29%)
 
 epoches: 8
-Loss=0.24231401085853577 Batch_id=1874 Accuracy=98.37: 100%|██████████| 1875/1875 [00:25<00:00, 73.19it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0204, Accuracy: 9926/10000 (99.26%)
+Loss=0.011099874041974545 Batch_id=1874 Accuracy=98.36: 100%|██████████| 1875/1875 [00:32<00:00, 57.77it/s]
+
+Test set: Average loss: 0.0222, Accuracy: 9918/10000 (99.18%)
 
 epoches: 9
-Loss=0.00595014076679945 Batch_id=1874 Accuracy=98.44: 100%|██████████| 1875/1875 [00:26<00:00, 71.35it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0219, Accuracy: 9931/10000 (99.31%)
+Loss=0.061118967831134796 Batch_id=1874 Accuracy=98.48: 100%|██████████| 1875/1875 [00:33<00:00, 56.24it/s]
+
+Test set: Average loss: 0.0239, Accuracy: 9922/10000 (99.22%)
 
 epoches: 10
-Loss=0.005863219499588013 Batch_id=1874 Accuracy=98.48: 100%|██████████| 1875/1875 [00:25<00:00, 73.14it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0232, Accuracy: 9913/10000 (99.13%)
+Loss=0.004031766671687365 Batch_id=1874 Accuracy=98.58: 100%|██████████| 1875/1875 [00:33<00:00, 56.12it/s]
+
+Test set: Average loss: 0.0234, Accuracy: 9930/10000 (99.30%)
 
 epoches: 11
-Loss=0.0951457992196083 Batch_id=1874 Accuracy=98.59: 100%|██████████| 1875/1875 [00:26<00:00, 72.10it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0233, Accuracy: 9929/10000 (99.29%)
+Loss=0.0018003821605816483 Batch_id=1874 Accuracy=98.63: 100%|██████████| 1875/1875 [00:33<00:00, 56.62it/s]
+
+Test set: Average loss: 0.0212, Accuracy: 9927/10000 (99.27%)
 
 epoches: 12
-Loss=0.0397578626871109 Batch_id=1874 Accuracy=98.59: 100%|██████████| 1875/1875 [00:26<00:00, 71.80it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0184, Accuracy: 9938/10000 (99.38%)
+Loss=0.04350588470697403 Batch_id=1874 Accuracy=98.69: 100%|██████████| 1875/1875 [00:34<00:00, 54.27it/s]
+
+Test set: Average loss: 0.0238, Accuracy: 9919/10000 (99.19%)
 
 epoches: 13
-Loss=0.010606668889522552 Batch_id=1874 Accuracy=98.69: 100%|██████████| 1875/1875 [00:25<00:00, 72.79it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0233, Accuracy: 9927/10000 (99.27%)
+Loss=0.000587923510465771 Batch_id=1874 Accuracy=98.69: 100%|██████████| 1875/1875 [00:34<00:00, 55.08it/s]
+
+Test set: Average loss: 0.0227, Accuracy: 9936/10000 (99.36%)
 
 epoches: 14
-Loss=0.02882736176252365 Batch_id=1874 Accuracy=98.66: 100%|██████████| 1875/1875 [00:26<00:00, 71.54it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0221, Accuracy: 9925/10000 (99.25%)
+Loss=0.007423980161547661 Batch_id=1874 Accuracy=98.70: 100%|██████████| 1875/1875 [00:33<00:00, 56.28it/s]
+
+Test set: Average loss: 0.0221, Accuracy: 9929/10000 (99.29%)
 
 epoches: 15
-Loss=0.01114226970821619 Batch_id=1874 Accuracy=98.72: 100%|██████████| 1875/1875 [00:26<00:00, 71.01it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0171, Accuracy: 9944/10000 (99.44%)
+Loss=0.005151162389665842 Batch_id=1874 Accuracy=98.74: 100%|██████████| 1875/1875 [00:34<00:00, 54.03it/s]
+
+Test set: Average loss: 0.0206, Accuracy: 9937/10000 (99.37%)
 
 epoches: 16
-Loss=0.017643120139837265 Batch_id=1874 Accuracy=98.64: 100%|██████████| 1875/1875 [00:26<00:00, 71.01it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0187, Accuracy: 9941/10000 (99.41%)
+Loss=0.014020382426679134 Batch_id=1874 Accuracy=98.79: 100%|██████████| 1875/1875 [00:33<00:00, 55.41it/s]
+
+Test set: Average loss: 0.0243, Accuracy: 9927/10000 (99.27%)
 
 epoches: 17
-Loss=0.002063074382022023 Batch_id=1874 Accuracy=98.72: 100%|██████████| 1875/1875 [00:25<00:00, 72.37it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0188, Accuracy: 9935/10000 (99.35%)
+Loss=0.007903391495347023 Batch_id=1874 Accuracy=98.82: 100%|██████████| 1875/1875 [00:33<00:00, 55.22it/s]
+
+Test set: Average loss: 0.0219, Accuracy: 9942/10000 (99.42%)
 
 epoches: 18
-Loss=0.012451915070414543 Batch_id=1874 Accuracy=98.75: 100%|██████████| 1875/1875 [00:26<00:00, 71.65it/s]
-  0%|          | 0/1875 [00:00<?, ?it/s]
-Test set: Average loss: 0.0196, Accuracy: 9938/10000 (99.38%)
+Loss=0.09574344009160995 Batch_id=1874 Accuracy=98.82: 100%|██████████| 1875/1875 [00:33<00:00, 55.79it/s]
+
+Test set: Average loss: 0.0222, Accuracy: 9933/10000 (99.33%)
 
 epoches: 19
-Loss=0.006165508180856705 Batch_id=1874 Accuracy=98.80: 100%|██████████| 1875/1875 [00:26<00:00, 70.91it/s]
+Loss=0.003300874959677458 Batch_id=1874 Accuracy=98.82: 100%|██████████| 1875/1875 [00:35<00:00, 53.37it/s]
 
-Test set: Average loss: 0.0213, Accuracy: 9930/10000 (99.30%)
+Test set: Average loss: 0.0212, Accuracy: 9930/10000 (99.30%)
+ 

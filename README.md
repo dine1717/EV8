@@ -59,7 +59,7 @@ ___________
 
 # **Step 3**
 
- [Code 3](https://github.com/dine1717/EV8/blob/Session4/Step_3.ipynb)
+[Code 3](https://github.com/dine1717/EV8/blob/Session4/Step_3.ipynb)
 
  
 # Target
@@ -81,7 +81,7 @@ ___________
 
 # **Step 4**
 
- 
+[Code 4](https://github.com/dine1717/EV8/blob/Session4/Step_4.ipynb)
  
 # Target
 1. Apply 1x1 after GAP
@@ -91,13 +91,121 @@ ___________
 # Result:
  
  1. Total Parameters: 8172
- 2. Best Training Accuarcy: 99.32
- 3. Best Test Accuarcy: 99.5
+ 2. Best Training Accuarcy: 98.75
+ 3. Best Test Accuarcy: 99.41
  
 # Analysis:
- 1. Model is performing attained 99.39 for the first time in the 10th epoch and max acciracy is 99.50
+ 1. Model is performing attained 99.35 for the first time in the 10th epoch and max acciracy is 99.4
  2. 8k parameters are good enough
  3. Going deeper with 7 conv layers helped
  4. Added 1x1 conv layer after GAP
- 5. Consistently above 99.35 in the last 5 epochs
+ 5. Consistently above 99.3 in the last 6 epochs
  
+# Epochs
+
+EPOCH: 9
+Loss=0.04256036505103111 Batch_id=468 Accuracy=98.57: 100%|██████████| 469/469 [00:18<00:00, 25.99it/s]
+Test set: Average loss: 0.0207, Accuracy: 9941/10000 (99.41%)
+
+EPOCH: 10
+Loss=0.060553789138793945 Batch_id=468 Accuracy=98.54: 100%|██████████| 469/469 [00:18<00:00, 25.76it/s]
+Test set: Average loss: 0.0218, Accuracy: 9935/10000 (99.35%)
+
+EPOCH: 11
+Loss=0.07819259166717529 Batch_id=468 Accuracy=98.66: 100%|██████████| 469/469 [00:17<00:00, 26.47it/s]
+Test set: Average loss: 0.0203, Accuracy: 9940/10000 (99.40%)
+
+EPOCH: 12
+Loss=0.02098129503428936 Batch_id=468 Accuracy=98.66: 100%|██████████| 469/469 [00:17<00:00, 26.29it/s]
+Test set: Average loss: 0.0185, Accuracy: 9940/10000 (99.40%)
+
+EPOCH: 13
+Loss=0.06187823414802551 Batch_id=468 Accuracy=98.67: 100%|██████████| 469/469 [00:17<00:00, 26.07it/s]
+Test set: Average loss: 0.0197, Accuracy: 9939/10000 (99.39%)
+
+EPOCH: 14
+Loss=0.05547378957271576 Batch_id=468 Accuracy=98.75: 100%|██████████| 469/469 [00:17<00:00, 26.19it/s]
+Test set: Average loss: 0.0193, Accuracy: 9931/10000 (99.31%)
+ 
+___________
+
+
+# **Step 5**
+
+[Code 5](https://github.com/dine1717/EV8/blob/Session4/Step_5.ipynb)
+ 
+# Target
+
+1. Less than 9000 parameters
+2. Less than 15 epochs
+3. Test with Cyclic LR
+4. Add small dropout of 5%
+
+# Results
+
+1. Number of Parameters = 8172
+2. Best Train Accuracy = 99.04
+3.Best Test Accuracy = 99.56
+
+# Analysis
+
+1.We pushed the model to achieve target with approx 8k Parameters
+2. Model consistently has 99.4 accuracy in the last 5 epocs
+3. Onecycle LR is pure magic
+
+## EPOCHS
+
+EPOCH: 10
+Loss=0.02085421048104763 Batch_id=468 Accuracy=98.82: 100%|██████████| 469/469 [00:18<00:00, 25.14it/s]
+Epoch: 10 LR: [0.031703533067975895]
+Test set: Average loss: 0.0190, Accuracy: 9942/10000 (99.42%)
+
+EPOCH: 11
+Loss=0.021372774615883827 Batch_id=468 Accuracy=98.92: 100%|██████████| 469/469 [00:18<00:00, 25.10it/s]
+Epoch: 11 LR: [0.018800902517922092]
+Test set: Average loss: 0.0179, Accuracy: 9943/10000 (99.43%)
+
+EPOCH: 12
+Loss=0.017850538715720177 Batch_id=468 Accuracy=98.99: 100%|██████████| 469/469 [00:20<00:00, 23.43it/s]
+Epoch: 12 LR: [0.008670466465012771]
+
+Test set: Average loss: 0.0152, Accuracy: 9956/10000 (99.56%)
+
+EPOCH: 13
+Loss=0.008586513809859753 Batch_id=468 Accuracy=99.04: 100%|██████████| 469/469 [00:18<00:00, 25.02it/s]
+Epoch: 13 LR: [0.0022123586092353013]
+Test set: Average loss: 0.0147, Accuracy: 9949/10000 (99.49%)
+
+EPOCH: 14
+Loss=0.04390697181224823 Batch_id=468 Accuracy=99.04: 100%|██████████| 469/469 [00:18<00:00, 25.36it/s]
+Epoch: 14 LR: [4.101745150496986e-07]
+Test set: Average loss: 0.0146, Accuracy: 9949/10000 (99.49%)
+
+
+# **Step 6**
+
+##  *** Bonus ***
+
+ 
+ [Code 6](https://github.com/dine1717/EV8/blob/Session4/Step_6.ipynb)
+ 
+# Target
+
+1. Less than 7000 parameters
+2. Less than 15 epochs
+3. Test with Cyclic LR
+4. Add small dropout of 5%
+
+# Results
+
+1. Number of Parameters = 6750
+2. Best Train Accuracy = 98.97
+3.Best Test Accuracy = 99.46
+
+# Analysis
+
+1.We pushed the model to achieve target with approx 6.7k Parameters
+2. Model consistently has 99.4 accuracy in the last 6 epocs except one in between
+3. 10 is the max output channels we have used except last conv block
+
+

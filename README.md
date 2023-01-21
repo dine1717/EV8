@@ -22,12 +22,12 @@ ______________
 # Result:
  
  1. Total Parameters: 147,344
- 2. Best Training Accuarcy: 99.78
- 3. Best Test Accuarcy: 99.11
+ 2. Best Training Accuarcy: 99.74
+ 3. Best Test Accuarcy: 99.06
  
 # Analysis:
  1. Model is working but we see for some of the epochs its overfitting.
- 2. Model will never reach 99.4 on test data as the train data already acheived a max of 99.78
+ 2. Model will never reach 99.4 on test data as the train data already acheived a max of 99.74
  3. To avoid overfitting we need three things; 1.Drop0ut, 2. Fewer Parameters, 3. Batch normalization
 
 ___________

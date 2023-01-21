@@ -180,32 +180,3 @@ EPOCH: 14
 Loss=0.04390697181224823 Batch_id=468 Accuracy=99.04: 100%|██████████| 469/469 [00:18<00:00, 25.36it/s]
 Epoch: 14 LR: [4.101745150496986e-07]
 Test set: Average loss: 0.0146, Accuracy: 9949/10000 (99.49%)
-
-
-# **Step 6**
-
-##  *** Bonus ***
-
- 
- [Code 6](https://github.com/dine1717/EV8/blob/Session4/Step_6.ipynb)
- 
-# Target
-
-1. Less than 7000 parameters
-2. Less than 15 epochs
-3. Test with Cyclic LR
-4. Add small dropout of 5%
-
-# Results
-
-1. Number of Parameters = 6750
-2. Best Train Accuracy = 98.97
-3.Best Test Accuracy = 99.46
-
-# Analysis
-
-1.We pushed the model to achieve target with approx 6.7k Parameters
-2. Model consistently has 99.4 accuracy in the last 6 epocs except one in between
-3. 10 is the max output channels we have used except last conv block
-
-

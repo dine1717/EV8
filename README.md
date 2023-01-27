@@ -37,3 +37,75 @@ Session - 5
 ![group and layer](https://user-images.githubusercontent.com/84949894/121703762-c6ba6c00-caf0-11eb-8a98-1042af0cb11c.PNG) <br>
 4) In case of group normalization (blue arrow) as shown above the channels are divided into corresponding groups and the groups are normalized separately. Each channel here will again have a gamma and a beta as the trainable parameters. <br>
 5) The explanation of the gammma and the beta in the normalization technique is as mentioned below. They can shift an image anywhere between completely normalized to the original image and anywhere in between as shown below. <br>
+
+![gamma_beta](https://user-images.githubusercontent.com/84949894/121705563-62001100-caf2-11eb-89ce-c8ad93fe55e5.jpeg) <br>
+
+### Model Architecture
+```
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1            [-1, 8, 26, 26]              72
+              ReLU-2            [-1, 8, 26, 26]               0
+       BatchNorm2d-3            [-1, 8, 26, 26]              16
+            Conv2d-4           [-1, 12, 24, 24]             864
+              ReLU-5           [-1, 12, 24, 24]               0
+       BatchNorm2d-6           [-1, 12, 24, 24]              24
+            Conv2d-7            [-1, 8, 24, 24]              96
+         MaxPool2d-8            [-1, 8, 12, 12]               0
+            Conv2d-9           [-1, 12, 10, 10]             864
+             ReLU-10           [-1, 12, 10, 10]               0
+      BatchNorm2d-11           [-1, 12, 10, 10]              24
+           Conv2d-12             [-1, 16, 8, 8]           1,728
+             ReLU-13             [-1, 16, 8, 8]               0
+      BatchNorm2d-14             [-1, 16, 8, 8]              32
+           Conv2d-15             [-1, 12, 8, 8]             192
+        MaxPool2d-16             [-1, 12, 4, 4]               0
+           Conv2d-17             [-1, 15, 4, 4]           1,620
+             ReLU-18             [-1, 15, 4, 4]               0
+      BatchNorm2d-19             [-1, 15, 4, 4]              30
+           Conv2d-20             [-1, 15, 4, 4]           2,025
+             ReLU-21             [-1, 15, 4, 4]               0
+      BatchNorm2d-22             [-1, 15, 4, 4]              30
+        AvgPool2d-23             [-1, 15, 1, 1]               0
+           Conv2d-24             [-1, 10, 1, 1]             150
+================================================================
+Total params: 7,767
+```
+
+### Explained Pictorially
+![image](https://user-images.githubusercontent.com/10822997/121735397-b4055e80-cb13-11eb-9c20-355970906925.png)
+* The above image presented in the research paper is one of the best ways to compare the various normalization techniques and get an intuitive understanding for GN.
+* Let’s consider that we have a batch of dimension (N, C, H, W) that needs to be normalized.
+
+N: Batch Size
+C: Number of Channels
+H: Height of the feature map
+W: Width of the feature map
+https://amaarora.github.io/2020/08/09/groupnorm.html
+
+#### Findings of normalization
+
+#### Batch Norm Findings
+** Toatal wrong predictions: 132
+![image](https://user-images.githubusercontent.com/10822997/121735848-5291bf80-cb14-11eb-8639-936f03d459f2.png)
+
+#### Layer Norm Findings
+** Total wrong predictions- 71
+![image](https://user-images.githubusercontent.com/10822997/121735958-7a812300-cb14-11eb-9f75-807ad880b9a8.png)
+
+#### Group Norm Findings
+** Total wrong predictions - 71
+![image](https://user-images.githubusercontent.com/10822997/121736413-29256380-cb15-11eb-9230-25addc167828.png)
+
+
+#### Training accuracy / Training loss  / Test accuracy / Test loss
+
+![image](https://user-images.githubusercontent.com/10822997/121736336-0eeb8580-cb15-11eb-9f05-67de648f44ef.png)
+
+
+### * Layer Norm and Group Norm performed similarly and has lower misclassified images than Batch Norm. 
+### * Layer Norm and Group Norm has exhibited consistency in test loss and accuracy  but Batch Norm has ups and downs
+
+
+

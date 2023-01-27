@@ -87,21 +87,21 @@ https://amaarora.github.io/2020/08/09/groupnorm.html
 #### Findings of normalization
 
 #### Batch Norm Findings
-** Toatal wrong predictions: 132
+** Toatal wrong predictions: 170
 ![image](https://user-images.githubusercontent.com/10822997/121735848-5291bf80-cb14-11eb-8639-936f03d459f2.png)
 
 #### Layer Norm Findings
-** Total wrong predictions- 71
+** Total wrong predictions- 65
 ![image](https://user-images.githubusercontent.com/10822997/121735958-7a812300-cb14-11eb-9f75-807ad880b9a8.png)
 
 #### Group Norm Findings
-** Total wrong predictions - 71
+** Total wrong predictions - 64
 ![image](https://user-images.githubusercontent.com/10822997/121736413-29256380-cb15-11eb-9230-25addc167828.png)
 
 
 #### Training accuracy / Training loss  / Test accuracy / Test loss
 
-![image](https://user-images.githubusercontent.com/10822997/121736336-0eeb8580-cb15-11eb-9f05-67de648f44ef.png)
+![image](https://user-images.githubusercontent.com/73247157/215103813-ff9b2ca8-5bf5-486d-bd82-4d9b149a1391.png)
 
 
 ### * Layer Norm and Group Norm performed similarly and has lower misclassified images than Batch Norm. 

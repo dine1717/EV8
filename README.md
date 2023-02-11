@@ -1,6 +1,6 @@
 # EVA
 
-# EVA S8 notes:
+# EVA S7 notes:
 
 ## Building the architecture of Resnet - 18
 1) A basic  resnet architectue is built using the concepts of Resnet 18 as available in the documentation. The same is shown below.<br>

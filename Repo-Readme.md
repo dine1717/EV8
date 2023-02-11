@@ -177,4 +177,3 @@ Adding exponential weighted average kind of smoothes out the average and thus he
 
 
 
-

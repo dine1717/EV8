@@ -1,3 +1,4 @@
+
 # EVA
 
 # EVA S8 notes:
@@ -172,7 +173,6 @@ Adding exponential weighted average kind of smoothes out the average and thus he
 
 
 ![](https://cs231n.github.io/assets/nn3/opt1.gif)
-
 
 
 
